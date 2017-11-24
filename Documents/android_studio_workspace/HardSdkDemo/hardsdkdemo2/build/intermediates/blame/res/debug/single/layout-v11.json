@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/layout-v11/notification_media_cancel_action.xml"
+    }
+]

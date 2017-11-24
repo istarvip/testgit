@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/anim/abc_popup_exit.xml"
+    }
+]

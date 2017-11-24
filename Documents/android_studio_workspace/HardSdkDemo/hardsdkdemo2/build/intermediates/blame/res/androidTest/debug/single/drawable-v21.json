@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/androidTest/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/chenliu/Documents/android_studio_workspace/HardSdkDemo/hardsdkdemo2/build/intermediates/res/merged/androidTest/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/chenliu/.android/build-cache/053fe543492ed9e93d6d4c49510cb2053b88c9b4/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]
