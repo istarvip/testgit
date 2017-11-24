@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@android:id/tabhost"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+ <com.walnutin.adapter.MyViewPager
+         android:background="@color/total_content"
+            android:id="@id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tab_split_line"
+            android:flipInterval="30"
+            android:focusable="false"
+            android:persistentDrawingCache="animation"/>
+
+    <!-- 底部栏 -->
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                     android:id="@id/rllable"
+                     android:layout_marginBottom="5dp"
+                     android:layout_alignParentBottom="true"
+            >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+
+                >
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@id/lable_viewpage"
+                      android:layout_weight="1"
+                     android:textColor="@color/half_gray"
+                     android:text="首页"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                    />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@id/label_group"
+                      android:textColor="@color/half_gray"
+                      android:text="群组"
+                      android:layout_weight="1"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                    />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:id="@id/label_nulls"
+                    />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@id/label_activity"
+                      android:textColor="@color/half_gray"
+                      android:text="更多"
+                      android:layout_weight="1"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                    />
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@id/label_me"
+                      android:textColor="@color/half_gray"
+                      android:text="我"
+                      android:layout_weight="1"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                    />
+                      </LinearLayout>
+
+    </RelativeLayout>
+<!--底部图片栏-->
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_above="@id/rllable"
+                     android:layout_marginBottom="4dp"
+                     android:id="@+id/rlbottom"
+            >
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                >
+            <ImageView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@id/viewpageid"
+                      android:layout_weight="1"
+                      android:textColor="@color/half_gray"
+                      android:src="@drawable/homepage_notselected"
+                      android:scaleType="fitCenter"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                    />
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@id/groupid"
+                       android:layout_weight="1"
+                       android:textColor="@color/half_gray"
+                       android:src="@drawable/group_notselected"
+                       android:scaleType="fitCenter"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                    />
+            <View android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                    />
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@id/activityid"
+                       android:scaleType="fitCenter"
+                       android:layout_weight="1"
+                       android:textColor="@color/half_gray"
+                       android:src="@drawable/activity_notselected"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                    />
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@id/meid"
+                       android:scaleType="fitCenter"
+                       android:layout_weight="1"
+                       android:textColor="@color/half_gray"
+                       android:src="@drawable/me_notselected"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                    />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View android:id="@id/tab_split_line"
+          android:background="@drawable/tab_bar_shadow"
+          android:visibility="visible"
+          android:layout_width="fill_parent"
+          android:layout_above="@id/rlbottom"
+          android:layout_marginBottom="5dp"
+          android:layout_height="1.0dip"/>
+
+
+    <ImageView android:id="@id/runningid"
+            android:background="@drawable/running_selected"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

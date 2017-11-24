@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/group_line_e5"></View>
+
+    <TextView
+        android:id="@+id/alarmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/font_defaults"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/alarmTime"
+        android:background="@color/line_color"></View>
+
+    <TextView
+        android:id="@+id/alarmSettting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/alarmTime"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="25dp"
+        android:text="每天"
+        android:textColor="@color/font_defaults" />
+
+    <ImageView
+        android:id="@+id/openAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/closeblue" />
+
+</RelativeLayout>
+
+

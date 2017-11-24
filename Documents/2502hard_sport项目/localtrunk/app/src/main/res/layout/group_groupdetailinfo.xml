@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:groupTopTitle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:topTitle="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.walnutin.view.TopTitleLableView
+        android:id="@id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        topTitle:back="排行"
+        topTitle:lableText="群组信息"
+        topTitle:right_oper_img= "@drawable/setting"
+        >
+
+    </com.walnutin.view.TopTitleLableView>
+
+    <com.walnutin.view.RelativeLineGroupView
+        android:id="@+id/group_num"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        groupTopTitle:centerContent="123456"
+        groupTopTitle:leftContent="群号码">
+
+    </com.walnutin.view.RelativeLineGroupView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/grey_transparent"
+        android:visibility="visible" />
+
+
+    <com.walnutin.view.RelativeLineGroupView
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        groupTopTitle:centerContent="前海核桃创意"
+        groupTopTitle:leftContent="群名称">
+
+    </com.walnutin.view.RelativeLineGroupView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/grey_transparent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/twoCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_defaults"
+            android:text="群二维码"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/arrow_right"
+            android:foregroundGravity="center_vertical" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/grey_transparent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white">
+
+        <GridView
+            android:id="@+id/group_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:columnWidth="47dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="5"
+            android:paddingTop="11dp"
+            android:verticalSpacing="10dp"></GridView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlmemberLayout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/group_allMember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="成员管理"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/arrow_right"
+            android:foregroundGravity="center_vertical" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_transparent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rlgroupTransfer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/group_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="群主管理权转让"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/arrow_right"
+            android:foregroundGravity="center_vertical" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/exit_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            style="@style/OvalButtom"
+            android:background="@drawable/btn_binding"
+            android:text="@string/group_info_exit"
+          />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/total_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_group_name"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/top_title_font" />
+
+        <TextView
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:drawableLeft="@drawable/foward"
+            android:drawablePadding="3dp"
+            android:text="@string/back_name"
+            android:textColor="@color/red_background_notselected"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llsearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_searchProj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:background="@drawable/group_search" />
+
+        <com.walnutin.view.ClearEditText
+            android:id="@+id/et_msg_search"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawablePadding="10dp"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:textColor="@color/text_color" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_below="@id/llsearch"
+    android:layout_marginTop="10dp"
+    android:id="@+id/jump_joinGroup"
+    >
+
+
+</ListView>
+
+
+
+</RelativeLayout>
+

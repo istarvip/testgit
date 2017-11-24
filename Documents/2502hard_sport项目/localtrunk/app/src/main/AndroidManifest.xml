@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.walnutin.hard"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" />
+
+    <application
+        android:name="com.walnutin.activity.MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:sharedUserId="android.uid.system"
+        android:theme="@style/MyappTheme">
+
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="d7siiMLVRmLFuOhUfuEiURRaE2FBMQR3" />
+
+        <meta-data
+            android:name="YCAPPKEY"
+            android:value="f0b520cdb42c7103f6683977793ae81c" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5767b0bb67e58ef48100019a"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="hard" />
+        <!--<activity android:name="SplashActivity">-->
+        <!--<activity android:name="SplashActivity">-->
+
+        <!--</activity>-->
+        <activity
+            android:name="com.walnutin.activity.SplashActivity"
+            android:noHistory="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            >
+
+
+
+        </activity>
+
+        <activity
+            android:name="com.walnutin.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+            <!--android:launchMode="singleTask"-->
+
+
+        </activity>
+
+        <!--<activity android:name=".MainActivity"  android:launchMode="singleTask"  > </activity>-->
+        <!--<activity android:name=".MainActivity"    > </activity>-->
+        <activity android:name="com.walnutin.activity.MapActivity"></activity>
+        <activity android:name="com.walnutin.activity.RegisterActivity"></activity>
+        <activity android:name="com.walnutin.activity.LoginActivity" ></activity>
+        <activity android:name="com.walnutin.activity.ValidateActivity"></activity>
+        <activity android:name="com.walnutin.activity.RunningActivity" android:launchMode="singleTask">
+
+        </activity>
+        <activity android:name="com.walnutin.activity.GroupCreateActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupAddActivity"></activity>
+        <activity android:name="com.walnutin.activity.RunningGoActivity"></activity>
+        <activity android:name="com.walnutin.activity.PersonalInfoActivity"></activity>
+        <activity android:name="com.walnutin.activity.PhoneSettingActivity" >
+
+
+        </activity>
+        <activity android:name="com.walnutin.activity.MyGoalActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupVerifActivity"></activity>
+        <activity android:name="com.walnutin.activity.WatchLinkActivity"></activity>
+        <activity android:name="com.walnutin.activity.LinkDetailActivity"></activity>
+        <activity android:name="com.walnutin.activity.NeglectDeviceActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupRankActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupInfoActivity"></activity>
+        <activity android:name="com.walnutin.activity.AddGroupInfoActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupAllMemberActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupTransferActivity"></activity>
+        <activity android:name="com.walnutin.activity.BindThridActivity"></activity>
+        <activity android:name="com.walnutin.activity.PhoneBindActivity"></activity>
+        <activity android:name="com.walnutin.activity.GroupSettingActivity"></activity>
+        <activity android:name="com.walnutin.Presenter.LinkDetailActivity"></activity>
+        <activity android:name="com.walnutin.activity.ListAppActivity"></activity>
+        <activity android:name="com.walnutin.activity.NoticePushActivity"></activity>
+        <activity android:name="com.walnutin.activity.PushAppListActivity"></activity>
+        <activity android:name="com.walnutin.activity.AlarmActivity"></activity>
+        <activity android:name="com.walnutin.activity.AlarmSettingActivity"></activity>
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105368592" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.walnutin.service.MonitorService"
+            android:enabled="true"
+            android:process=":monitor"></service>
+        <service android:name="com.walnutin.service.StepService"></service>
+
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"></service>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <service android:name="com.walnutin.service.DeviceLinkService"></service>
+        <service
+            android:name="com.yc.peddemo.sdk.BluetoothLeService"
+            android:enabled="true"
+            android:theme="@style/PcmTextAppearance" />
+
+        <service
+            android:name="com.walnutin.service.NLService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.walnutin.http.NetStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.walnutin.service.BroadReceiver">
+            <intent-filter android:priority="800">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="lock_pin" />
+                <action android:name="unlock_pin" />
+                <action android:name="lock_pinClearWithoutLock" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--允许程序连接到已配对的蓝牙设备-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--允许程序发现和配对蓝牙设备-->
+    <!-- 用于读取手机当前的状态-->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--允许访问振动设备-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--屏幕保持唤醒 不锁屏-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--允许应用程序更改主屏幕中的设置和快捷方式-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+</manifest>

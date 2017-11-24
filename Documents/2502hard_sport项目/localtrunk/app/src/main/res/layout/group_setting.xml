@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:groupItemContent="http://schemas.android.com/apk/res-auto"
+    xmlns:topTitle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.walnutin.view.TopTitleLableView
+        android:id="@id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        topTitle:back="信息"
+        topTitle:lableText="群设置"
+        topTitle:right_oper_txt="保存">
+
+    </com.walnutin.view.TopTitleLableView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"></View>
+
+    <com.walnutin.view.RelativeEditGroupView
+        android:id="@+id/redt_inputGroupDescrible"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        groupItemContent:leftItemContent="@string/Enter_groupDescribe">
+
+    </com.walnutin.view.RelativeEditGroupView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"></View>
+
+    <com.walnutin.view.RelativeEditGroupView
+        android:id="@+id/redt_inputGroupGoal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        groupItemContent:centerItemContent="1000"
+        groupItemContent:leftItemContent="@string/Enter_groupGoal"
+        groupItemContent:rightItemContent="步"
+
+        >
+
+    </com.walnutin.view.RelativeEditGroupView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_color"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="是否开启加入验证"
+            android:textColor="@color/font_defaults"
+            android:textColorHint="@color/half_gray"
+            android:textSize="@dimen/line_content_font" />
+
+        <ImageView
+            android:id="@+id/isNeedValid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/closeblue" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <EditText
+        android:id="@+id/edt_inputGroupVerify"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="请输入验证密码"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textColor="@color/font_defaults"
+        android:textColorHint="@color/half_gray"
+        android:textSize="@dimen/font_default_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"></View>
+
+
+    <LinearLayout
+        android:id="@+id/lineGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/line_color"></View>
+
+        <com.walnutin.view.RelativeEditGroupView
+            android:id="@+id/redt_inputCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            groupItemContent:leftItemContent="公司名称">
+
+        </com.walnutin.view.RelativeEditGroupView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color">
+
+        </View>
+
+        <com.walnutin.view.RelativeEditGroupView
+            android:id="@+id/redt_inputGroupCompanyScale"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            groupItemContent:leftItemContent="公司规模"
+            groupItemContent:rightItemContent="人">
+
+        </com.walnutin.view.RelativeEditGroupView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color">
+
+        </View>
+
+        <com.walnutin.view.RelativeEditGroupView
+            android:id="@+id/redt_inputGroupCreatorName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            groupItemContent:leftItemContent="你的姓名"></com.walnutin.view.RelativeEditGroupView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+
+        <com.walnutin.view.RelativeEditGroupView
+            android:id="@+id/redt_inputGroupCompanyMail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            groupItemContent:leftItemContent="手机号码">
+
+        </com.walnutin.view.RelativeEditGroupView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+    </LinearLayout>
+
+</LinearLayout>
+

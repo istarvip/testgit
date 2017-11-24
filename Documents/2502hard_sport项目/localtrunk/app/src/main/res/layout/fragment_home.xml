@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/total_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/im_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/setting" />
+
+        <TextView
+            android:id="@+id/datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="WALKING HOME"
+            android:textColor="@color/red_background_notselected" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/share" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.walnutin.view.HealthModuleLayout
+                    android:id="@+id/healthModule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red_background_notselected"></com.walnutin.view.HealthModuleLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlStep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main">
+
+                <com.walnutin.view.StepModuleLayout
+                    android:id="@+id/stepModule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></com.walnutin.view.StepModuleLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlStep"
+                android:layout_marginTop="15dp">
+
+                <com.walnutin.view.SleepModuleLayout
+                    android:id="@+id/sleepModule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></com.walnutin.view.SleepModuleLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlHeartRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlSleep"
+                android:layout_marginTop="15dp">
+
+                <com.walnutin.view.HeartRateModuleLayout
+                    android:id="@+id/rateModule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></com.walnutin.view.HeartRateModuleLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

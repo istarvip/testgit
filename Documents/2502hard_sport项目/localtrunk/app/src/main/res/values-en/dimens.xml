@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_text_size">12.0dip</dimen>
+    <dimen name="top_title_font">20sp</dimen>
+    <dimen name="top_title_margin_right">14.0dip</dimen>
+    <dimen name="top_title_margin_left">14.0dip</dimen>
+    <dimen name="margin_top">48dip</dimen>
+    <dimen name="font_default_size">14sp</dimen>
+    <dimen name="margin_left">14.0dip</dimen>
+    <dimen name="margin_right">14.0dip</dimen>
+    <dimen name="running_txt_width">70dip</dimen>
+    <dimen name="running_line_width">30dip</dimen>
+    <dimen name="running_txt_font_size">10sp</dimen>
+    <dimen name="running_km_font">80dp</dimen>
+    <dimen name="running_time_font">60dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

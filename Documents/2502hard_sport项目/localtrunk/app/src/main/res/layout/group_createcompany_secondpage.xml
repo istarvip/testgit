@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/Enter_groupName"
+                android:textColor="@color/lable_text_color"
+                android:textColorHint="@color/font_defaults"
+                android:textSize="@dimen/font_default_size" />
+
+            <EditText
+                android:id="@+id/edt_inputCompanyGroupName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_item"
+                android:layout_below="@id/pop_createGroup"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:textColor="@color/font_defaults"
+                android:textSize="@dimen/font_default_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/Enter_groupDescribe"
+                android:textColor="@color/lable_text_color"
+                android:textColorHint="@color/font_defaults"
+                android:textSize="@dimen/font_default_size" />
+
+            <EditText
+                android:id="@id/edt_inputGroupCompanyDescrible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left_item"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:textColor="@color/font_defaults"
+                android:textSize="@dimen/font_default_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/Enter_groupGoal"
+                android:textColor="@color/lable_text_color"
+                android:textColorHint="@color/font_defaults"
+                android:textSize="@dimen/font_default_size" />
+
+            <EditText
+                android:id="@id/edt_inputGroupCompanyGoal"
+                android:layout_marginLeft="@dimen/margin_left_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@color/font_defaults"
+                android:textSize="@dimen/font_default_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+
+        <LinearLayout
+            android:id="@+id/lladdDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:gravity="center_vertical"
+                    android:text="部门一："
+                    android:textColor="@color/lable_text_color"
+                    android:textColorHint="@color/font_defaults"
+                    android:textSize="@dimen/font_default_size" />
+
+                <EditText
+                    android:id="@id/edt_inputGroupCompanyDepart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_defaults"
+                    android:textSize="@dimen/font_default_size"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:gravity="center_vertical"
+                    android:text="部门二："
+                    android:textColor="@color/lable_text_color"
+                    android:textColorHint="@color/font_defaults"
+                    android:textSize="@dimen/font_default_size" />
+
+                <EditText
+                    android:id="@id/edt_inputGroupCompanyDepart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_defaults"
+                    android:textSize="@dimen/font_default_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+
+        <TextView
+            android:id="@+id/group_addDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="添加部门"
+            android:textColor="@color/red_background_notselected" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/line_color"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="是否开启加入验证"
+                android:textColor="@color/lable_text_color"
+                android:textColorHint="@color/half_gray"
+                android:textSize="@dimen/line_content_font" />
+
+            <ImageView
+                android:id="@+id/isCompanyNeedValid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/closeblue"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"/>
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/edt_addGroupCompanyValidate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="8"
+            android:hint="请输入验证密码"
+            android:textColor="@color/font_defaults"
+            android:textColorHint="@color/half_gray"
+            android:textSize="@dimen/font_default_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"></View>
+
+        <Button
+            android:id="@id/btn_group_company_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_login_selector"
+            android:gravity="center"
+            android:text="提交申请"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

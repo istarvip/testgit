@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:topTitle="http://schemas.android.com/apk/res-auto"
+    android:background="@color/total_content"
+    android:orientation="vertical">
+
+    <com.walnutin.view.TopTitleLableView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@id/topTitle"
+        topTitle:back ="返回"
+        topTitle:lableText="群组排行"
+        topTitle:right_oper_img= "@drawable/setting"
+        >
+
+    </com.walnutin.view.TopTitleLableView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="#e5e5e5"></View>
+
+    <RelativeLayout
+        android:id="@+id/rlg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/lltxtLine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/group_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="今日"
+                android:textColor="@color/font_defaults" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/group_line_e5">
+
+            </View>
+
+            <TextView
+                android:id="@+id/group_last_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="上周"
+                android:textColor="@color/font_defaults" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/group_line_e5">
+
+            </View>
+
+            <TextView
+                android:id="@+id/group_lastmonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="上月"
+                android:textColor="@color/font_defaults" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/lltxtLine"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/line_today"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red_background_notselected"></View>
+
+            <View
+                android:id="@+id/line_lastweek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red_background_notselected"
+                android:visibility="invisible"
+
+                ></View>
+
+            <View
+                android:id="@+id/line_lastmonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red_background_notselected"
+                android:visibility="invisible"></View>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlbottom"
+        android:layout_below="@id/rlg"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+       >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/group_rank_swiperefreshlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/group_rank_recycler"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@id/rlbottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="个人排行"
+                android:textColor="@color/red_background_notselected" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/group_line_e5">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="部门排行"
+                android:textColor="@color/font_defaults" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

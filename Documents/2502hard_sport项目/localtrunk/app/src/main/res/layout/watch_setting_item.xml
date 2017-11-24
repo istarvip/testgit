@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"></View>
+
+    <ImageView
+        android:id="@+id/left_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/dial" />
+
+    <TextView
+        android:id="@+id/centerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/font_default_size"
+        android:textColor="@color/font_defaults"
+        android:gravity="center_vertical"
+        android:paddingLeft="50dp"
+        android:text="O(∩_∩)O哈哈~" />
+
+</RelativeLayout>

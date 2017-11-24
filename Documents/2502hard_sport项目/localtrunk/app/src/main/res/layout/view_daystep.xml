@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/daily_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="今天"
+            android:textColor="@color/font_defaults"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlring"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_below="@id/daily_date"
+        android:layout_centerHorizontal="true">
+
+        <com.walnutin.view.ProgressCircle
+            android:id="@id/homepage_RingProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@id/homepage_currentsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="14000"
+            android:textColor="@color/font_defaults"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/homepage_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/homepage_currentsteps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="步数"
+            android:textColor="@color/font_defaults"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homepage_currentsteps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/homepage_txtgloasteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本周最高"
+                android:textColor="@color/font_defaults"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/homepage_gloalsteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/homepage_txtgloasteps"
+                android:text="7000"
+                android:textColor="@color/font_defaults"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/homepage_describleGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="相当于一个地球"
+            android:textColor="@color/font_defaults"
+            android:textSize="14sp"
+            android:layout_below="@+id/rlring"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/arrow_left"
+    android:src="@drawable/arrow_left"
+    android:padding="20dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/arrow_right"
+        android:src="@drawable/arrow_right"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+

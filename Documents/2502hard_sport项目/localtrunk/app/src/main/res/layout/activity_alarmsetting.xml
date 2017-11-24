@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topTitle="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/total_content"
+    >
+
+    <com.walnutin.view.TopTitleLableView
+        android:id="@id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        topTitle:back="返回"
+        topTitle:lableText="闹钟设置"></com.walnutin.view.TopTitleLableView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="选择时间"
+            android:textColor="@color/font_defaults"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/group_line_e5" />
+
+        <RelativeLayout
+            android:id="@+id/repeat_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/tv_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="重复" />
+
+            <TextView
+                android:id="@+id/arrow_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/personal_item_arrow" />
+
+            <TextView
+                android:id="@+id/tv_repeat_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/arrow_one"
+                android:textColor="@color/font_defaults"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_and_outline_grey" />
+
+
+        <Button
+            android:id="@+id/set_btn"
+            style="@style/OvalButtom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/login_login_selector"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/materia"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#40000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/personal_info"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/material_renturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="3dp"
+            android:text="@string/back_name"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp">
+
+        <RelativeLayout
+            android:id="@+id/rlname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="82dp">
+
+            <EditText
+                android:id="@+id/personal_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/personal_edit_selector"
+                android:gravity="center"
+                android:hint="请输入姓名"
+                android:textColor="#ca1d28"
+                android:textColorHint="@color/grayfont" />
+
+            <ImageButton
+                android:id="@id/personal_name_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/personal_name"
+                android:background="@drawable/wrong" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/rlname"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlsex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/personal_sex"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/personal_edit_selector"
+                android:text="请选择性别"
+                android:textColor="#ca1d28" />
+
+            <ImageButton
+                android:id="@id/personal_sex_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/personal_sex"
+                android:background="@drawable/wrong" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/rlsex"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlbirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/personal_birth"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/personal_edit_selector"
+                android:gravity="center"
+                android:text="请选择出生日期"
+                android:textColor="#ca1d28" />
+
+            <ImageButton
+                android:id="@id/personal_birth_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/personal_birth"
+                android:background="@drawable/wrong" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/rlbirth"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlpersonHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rlbirth"
+            android:layout_below="@id/view3">
+
+            <Button
+                android:id="@id/personal_hight"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/personal_edit_selector"
+                android:gravity="center"
+                android:text="请选择身高"
+                android:textColor="#ca1d28" />
+
+            <ImageButton
+                android:id="@id/personal_hight_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/personal_hight"
+                android:background="@drawable/wrong" />
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/rlpersonHeight"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlpersonalWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rlpersonHeight"
+            android:layout_below="@id/view4">
+
+            <Button
+                android:id="@id/personal_weight"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/personal_edit_selector"
+                android:gravity="center"
+                android:text="请选择体重"
+                android:textColor="#ca1d28"
+                android:textColorHint="#ca1d28" />
+
+            <ImageButton
+                android:id="@id/personal_weight_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/personal_weight"
+                android:background="@drawable/wrong" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/personal_finish"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/rlpersonalWeight"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/personal_edit_notselect_selector"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="@color/font_defaults" />
+
+
+        <RelativeLayout
+            android:id="@+id/personal_bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="#b8b8bb">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/personal_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/quickin"
+                />
+
+            <TextView
+                android:id="@+id/personal_toMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/personal_right_arrow"
+                android:text="直接进入"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

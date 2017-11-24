@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.walnutin.hardsdkdemo">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+
+        <service
+            android:name="com.yc.peddemo.sdk.BluetoothLeService"
+            android:enabled="true" />
+        <service
+            android:name=".ProductList.BluetoothLeService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#40000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/validate"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@id/validate_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="3dp"
+            android:text="@string/back_name"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/validll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="102dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/validate_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/validate_edit_selector"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="11"
+                android:hint="@string/inputPhone"
+                android:textColor="@color/font_defaults"
+                android:textColorHint="@color/half_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/validll"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@id/validate_inputValidateCode"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/validate_edit_selector"
+                android:gravity="center"
+                android:hint="输入验证码"
+                android:textColor="@color/font_defaults"
+                android:textColorHint="@color/lable_text_color" />
+
+            <TextView
+                android:id="@id/validate_getValidateCode"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@id/validate_inputValidateCode"
+                android:gravity="center"
+                android:text="@string/click_get_code"
+                android:clickable="false"
+                android:textColor="@color/group_line_e5" />
+
+            <EditText
+                android:id="@id/validate_firstPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/validate_getValidateCode"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/validate_edit_selector"
+                android:gravity="center"
+                android:hint="@string/FirstinputPwd"
+                android:inputType="textPassword"
+                android:textColor="@color/font_defaults"
+                android:textColorHint="@color/lable_text_color" />
+
+            <EditText
+                android:id="@id/validate_secondPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/validate_firstPwd"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/validate_edit_selector"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:hint="@string/sencondInputPwd"
+                android:textColor="@color/font_defaults"
+                android:textColorHint="@color/lable_text_color" />
+
+            <Button
+                android:id="@id/validate_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/validate_secondPwd"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/login_login_selector"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <include layout="@layout/activity_topbar" />
+
+                <TextView
+                    android:id="@id/data_mymaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/my_profile"
+                    android:textSize="15sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- 昵称 -->
+
+        <RelativeLayout
+            android:id="@id/setting_voice"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/nickname"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/grey_transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@id/data_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="张伟"
+                android:textColor="@color/grayfont" />
+
+            <ImageView
+                android:id="@+id/im_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/setting_data" />
+        </RelativeLayout>
+
+        <!-- 性别 -->
+
+        <RelativeLayout
+            android:id="@id/data_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/setting_autopause"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/sex"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/grey_transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@id/data_textGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="男"
+                android:textColor="@color/grayfont" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/gender" />
+        </RelativeLayout>
+
+        <!-- 身高 -->
+
+        <RelativeLayout
+            android:id="@id/data_stature"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/stature" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/height"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/grey_transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@id/data_textStature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="170cm"
+                android:textColor="@color/grayfont" />
+        </RelativeLayout>
+
+        <!-- 体重 -->
+
+        <RelativeLayout
+            android:id="@id/data_weight"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/weight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/weight"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/grey_transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@id/data_textWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="65kg"
+                android:textColor="@color/grayfont" />
+        </RelativeLayout>
+
+        <!-- 生日 -->
+
+        <RelativeLayout
+            android:id="@id/data_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/birthday" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/birthday"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/grey_transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@id/data_textBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="1995.08.26"
+                android:textColor="@color/grayfont" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+        <!-- 个性签名 -->
+
+        <RelativeLayout
+            android:id="@id/data_signature"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/signature" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/signature"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/grey_transparent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@id/data_textSignature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="5dp"
+                android:text="已同步"
+                android:textColor="@color/grayfont"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

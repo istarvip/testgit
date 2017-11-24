@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:totil="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <!-- 绑定手机title -->
+
+    <com.walnutin.view.TopTitleLableView
+        android:id="@id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        totil:back="返回"
+        totil:lableText="绑定手机">
+
+    </com.walnutin.view.TopTitleLableView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/grey_transparent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@id/phone_bindPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/chinese_mainland"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:id="@id/phone_textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="+86" />
+    </RelativeLayout>
+
+    <!-- 输入手机号 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@id/phone_editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:background="@null"
+            android:hint="@string/Enter_phoneNumber"
+            android:textColorHint="@color/half_gray"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <!-- 输入密码 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@id/phone_eidtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/Enter_20password"
+            android:paddingRight="40dp"
+            android:textColorHint="@color/half_gray"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@id/phone_showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/showpassword" />
+    </RelativeLayout>
+
+    <!-- 输入验证码 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@id/phone_editVerification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/Enter_verification"
+            android:textColorHint="@color/half_gray"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_transparent"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@id/phone_sendVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/btn_sendverification"
+            android:textColorHint="@color/half_gray"
+            android:textColor="@color/half_gray"
+            android:text="@string/acquire_verification"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/grey_transparent"
+        android:visibility="visible" />
+
+    <!-- 绑定button -->
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@id/phone_binding"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/OvalButtom"
+        android:background="@drawable/login_login_selector"
+        android:gravity="center"
+        android:text="@string/binging"
+        android:textSize="15sp" />
+</LinearLayout>

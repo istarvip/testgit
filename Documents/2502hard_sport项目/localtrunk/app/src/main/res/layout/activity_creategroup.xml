@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/total_content"
+        >
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:layout_height="48dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:text="@string/create_group_name"
+                  android:textColor="@color/font_defaults"
+                  android:textSize="@dimen/top_title_font"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/register_back"
+                  android:text="@string/back_name"
+                  android:textColor="@color/red_background_notselected"
+                  android:textSize="14sp"
+                  android:drawableLeft="@drawable/foward"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:drawablePadding="3dp"
+                  android:layout_marginLeft="14dp"
+                />
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/total_content"
+          android:layout_marginTop="48dp"
+            ></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:layout_marginTop="49dp"
+                  android:orientation="horizontal"
+                  android:background="@color/white"
+            >
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:id="@id/group_txtPerson"
+                  android:background="@drawable/redbackground_selector"
+                  android:textColor="@color/lable_text_color"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:text="@string/personal_groups"
+                  android:textSize="@dimen/font_default_size"
+                />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@id/group_txtCompany"
+                  android:layout_weight="1"
+                  android:background="@color/white"
+                  android:textColor="@color/lable_text_color"
+                  android:layout_gravity="center"
+                  android:textSize="@dimen/font_default_size"
+                  android:gravity="center"
+                  android:text="@string/enterprise_groups"
+                />
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="110dp"
+            >
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@id/group_rl_person"
+                >
+            <include
+                    layout="@layout/group_createpersonal"
+
+                    ></include>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:id="@id/group_rl_company"
+                >
+            <include layout="@layout/group_createcompany"></include>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:id="@id/group_rl_company_secondpage"
+                >
+            <include layout="@layout/group_createcompany_secondpage"></include>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

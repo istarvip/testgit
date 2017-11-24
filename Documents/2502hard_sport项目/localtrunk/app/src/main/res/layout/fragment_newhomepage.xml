@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/total_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/im_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/title_map" />
+
+        <TextView
+            android:id="@+id/datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="1991.09.09"
+            android:textColor="@color/font_defaults"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/oneKeyshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/share" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rltop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/homepage_ring">
+
+
+                <com.walnutin.view.SmartViewPager
+                    android:id="@+id/lazyviewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="@color/homepage_ring"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:visibility="gone"></com.walnutin.view.SmartViewPager>
+
+
+                <com.walnutin.view.DayStepView
+                    android:id="@+id/daystepview"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="@color/homepage_ring"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:visibility="visible"></com.walnutin.view.DayStepView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/type_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="日"
+                    android:textSize="16sp"
+                    android:textColor="@color/font_defaults" />
+
+                <TextView
+                    android:id="@+id/type_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周"
+                    android:textSize="16sp"
+                    android:textColor="@color/font_defaults" />
+
+                <TextView
+                    android:id="@+id/type_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="月"
+                    android:textSize="16sp"
+                    android:textColor="@color/font_defaults" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color"></View>
+            <FrameLayout
+                android:id="@+id/contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.walnutin.view.SimpleLableView
+                    android:id="@+id/today_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    custom:label="今日步数" />
+
+                <com.walnutin.view.SimpleLableView
+                    android:id="@+id/today_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    custom:label="行走距离" />
+
+                <com.walnutin.view.SimpleLableView
+                    android:id="@+id/today_cal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    custom:label="卡路里消耗" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

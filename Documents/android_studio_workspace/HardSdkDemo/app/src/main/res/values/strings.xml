@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HardSdkDemo</string>
+    <string name="already_bind">手环已被绑定</string>
+    <item type="id" name="tag_position"></item>
+    <item type="id" name="tag_listener"></item>
+
+    <string name="ble_is_newest">手环已是最新版本。</string>
+    <string name="frequent_access_server">请勿频繁访问服务器</string>
+</resources>

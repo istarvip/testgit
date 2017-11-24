@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topTitle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/total_content"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <com.walnutin.view.TopTitleLableView
+        android:id="@id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        topTitle:back="返回"
+        topTitle:lableText="消息推送"></com.walnutin.view.TopTitleLableView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/group_line_e5"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/addSoft"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="添加软件"
+            android:textColor="@color/font_defaults"
+            android:textSize="15dp" />
+
+        <ListView
+            android:id="@+id/appListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/addSoft"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:divider="#40000000"
+            android:dividerHeight="1px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/addSoft"
+            android:background="@color/group_line_e5"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

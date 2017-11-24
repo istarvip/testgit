@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/total_content">
+
+    <RelativeLayout
+        android:id="@+id/groud_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="验证信息"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/top_title_font" />
+
+        <TextView
+            android:id="@+id/verif_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:drawableLeft="@drawable/foward"
+            android:drawablePadding="3dp"
+            android:text="@string/back_name"
+            android:textColor="@color/red_background_notselected"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/groud_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="下一步"
+            android:textColor="#404040"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/verif_info"
+        android:layout_below="@id/groud_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#404040"
+        android:text="该群要求你输入验证密码"/>
+
+    <LinearLayout
+        android:id="@+id/llsearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginTop="85dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <com.walnutin.view.ClearEditText
+            android:id="@+id/et_msg_search"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawablePadding="10dp"
+            android:hint="123456"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/font_defaults"
+            android:textColorHint="#e5e5e5" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

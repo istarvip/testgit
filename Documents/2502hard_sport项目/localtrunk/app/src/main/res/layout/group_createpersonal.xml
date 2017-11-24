@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/Enter_groupName"
+            android:textColor="@color/lable_text_color"
+            android:textColorHint="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <EditText
+            android:id="@+id/edt_inputGroupName"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pop_createGroup"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:textColorHint="@color/half_gray"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/Enter_groupDescribe"
+            android:textColor="@color/lable_text_color"
+            android:textColorHint="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <EditText
+            android:id="@+id/edt_inputGroupDescrible"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_defaults"
+            android:textColorHint="@color/half_gray"
+            android:textSize="@dimen/font_default_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:text="@string/Enter_groupGoal"
+            android:textColor="@color/lable_text_color"
+            android:textColorHint="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <EditText
+            android:id="@+id/edt_inputGroupGoal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textColorHint="@color/half_gray"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line_color"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="是否开启加入验证"
+            android:textColor="@color/lable_text_color"
+            android:textColorHint="@color/half_gray"
+            android:textSize="@dimen/line_content_font" />
+
+        <ImageView
+            android:id="@+id/isNeedValid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/closeblue"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edt_inputGroupVerify"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:maxLength="8"
+        android:hint="请输入验证密码"
+        android:textColor="@color/font_defaults"
+        android:textColorHint="@color/half_gray"
+        android:textSize="@dimen/font_default_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"></View>
+
+    <Button
+        android:id="@id/btn_group_personal_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_login_selector"
+        android:gravity="center"
+        android:text="@string/submit_apply"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>
+

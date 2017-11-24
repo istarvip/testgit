@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hard</string>
+    <string name="login_name">登录</string>
+    <string name="register_name">注册</string>
+    <string name="back_name">返回</string>
+    <string name="personal_info">我的资料</string>
+    <string name="validate">验证</string>
+    <string name="directEnter">直接进入</string>
+    <string name="forgetPwd">忘记密码？</string>
+    <string name="inputPhone">请输入手机号码</string>
+    <string name="inputPwd">请输入密码</string>
+    <string name="FirstinputPwd">输入新密码</string>
+    <string name="sencondInputPwd">再次输入新密码</string>
+    <string name="click_get_code">点击获取验证码</string>
+    <string name="get_code">输入验证码</string>
+    <string name="finish">完成</string>
+    <string name="ok">确认</string>
+    <string name="add_group_name">添加群组</string>
+    <string name="group_info">群组信息</string>
+    <string name="group_info_exit">退出群组</string>
+    <string name="group_info_modify">修改个人信息</string>
+    <string name="add_group_rank">群组排行</string>
+    <string name="group_info_save">保存</string>
+    <string name="running">跑步</string>
+    <string name="create_group_name">创建群组</string>
+    <string name="search_hint">请输入群号或者群名</string>
+    <string name="depart3">部门三：</string>
+    <string name="depart4">部门四：</string>
+    <string name="depart5">部门五：</string>
+    <string name="depart6">部门六：</string>
+    <string name="depart7">部门七：</string>
+    <string name="running_warmup_befor">跑前热身</string>
+    <string name="http_connect_fail">连接异常</string>
+    <string name="not_support_ble">当前设备不支持BLE蓝牙功能</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="connect_failed">连接出错</string>
+
+
+
+    <!--activity_bindingInfo-->
+    <string name="binding_information">绑定信息</string>
+
+
+
+
+
+
+    <string name="auto_pause">自动暂停</string>
+    <string name="voice_prompt">语音提示</string>
+    <string name="Night_mode">自动夜间模式</string>
+    <string name="background_permissions">后台运行权限设置</string>
+    <string name="user_feedback">用户反馈</string>
+    <string name="About_Us">关于我们</string>
+    <string name="log_out">注销登录</string>
+    <string name="step_number">步数</string>
+    <string name="goals">目标</string>
+    <string name="gorups">群组</string>
+    <string name="Data_acquisition_fails">数据获取失败，点击重新刷新</string>
+
+    <string name="my_goals">我的目标</string>
+    <string name="log_off">注销</string>
+    <string name="mail_account">邮箱帐号</string>
+    <string name="thirdParty_register">第三方登录</string>
+    <string name="Nothing">无</string>
+    <string name="QQ_accounts">QQ帐号</string>
+    <string name="wechat_accounts">微信帐号</string>
+    <string name="sina_accounts">新浪微博帐号</string>
+
+    <!--activity_bindMailbox-->
+    <string name="binding_mailbox">绑定邮箱</string>
+    <string name="Enter_mailbox">请输入您的邮箱</string>
+    <string name="Enter_password">请输入您的密码</string>
+    <string name="Enter_verification">请输入验证码</string>
+    <string name="acquire_verification">获取验证码</string>
+    <string name="binging">绑定</string>
+
+    <!--activity_bindphone-->
+    <string name="binding_phone">绑定手机</string>
+    <string name="chinese_mainland">中国大陆</string>
+    <string name="Enter_phoneNumber">请输入11位手机号</string>
+    <string name="Enter_20password">输入6-20位的密码</string>
+
+    <!--activity_createGroup-->
+    <string name="personal_groups">个人群组</string>
+    <string name="enterprise_groups">企业群组</string>
+
+
+    <!--activity_mygoal-->
+    <string name="Daily_movement_target">每日运动目标</string>
+    <string name="step">步</string>
+    <string name="seting_goal">根据你的个人情况推荐的运动目标</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--activity_mymaterial-->
+    <string name="my_profile">我的资料</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="birthday">生日</string>
+    <string name="signature">个性签名</string>
+
+
+
+
+
+    <!--include.group_addPersonal-->
+    <string name="Enter_groupName">输入群名称:</string>
+    <string name="Enter_groupDescribe">输入群描述:</string>
+    <string name="Enter_groupGoal">输入群目标:</string>
+    <string name="Password_Verify">验证密码:</string>
+    <string name="submit_apply">提交申请</string>
+
+    <!--include.activity_groupsearitem-->
+    <string name="hard_name">前海核桃创意科技</string>
+
+    <!--include.third_login-->
+    <string name="QQ">QQ</string>
+    <string name="WeChat">微信</string>
+    <string name="microblog">微博</string>
+
+
+    <!--loadDataDialog-->
+    <string name="logining">正在登录...</string>
+    <string name="initing">数据加载中...</string>
+    <string name="uping">数据上传中...</string>
+    <string name="cleaning">缓存清理中...</string>
+    <string name="authoring">授权中...</string>
+    <string name="loading">努力加载中...</string>
+    <string name="dealing">处理中...</string>
+
+    <string name="mon">周一</string>
+    <string name="tue">周二</string>
+    <string name="wed">周三</string>
+    <string name="thu">周四</string>
+    <string name="fri">周五</string>
+    <string name="sat">周六</string>
+    <string name="sun">周日</string>
+    <string name="cycle_sure">确定</string>
+    <string name="vibration">震动</string>
+</resources>

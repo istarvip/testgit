@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="心率"
+            android:textColor="@color/font_defaults" />
+
+        <TextView
+            android:id="@+id/refRate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="60-100次/分"
+            android:textSize="@dimen/font_default_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/refRate"
+            android:gravity="center_vertical"
+            android:text="健康心率/"
+            android:textSize="@dimen/font_default_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"></View>
+
+        <TextView
+            android:id="@+id/realHeartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="心率75次/分"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <com.walnutin.view.BarHeartRateStraightLine
+            android:id="@+id/barheartStraight"
+            android:layout_width="60dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/realHeartRate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grayfont"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/beforRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/realHeartRate"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/barheartStraight"
+            android:background="@drawable/arrow_left" />
+
+        <ImageView
+            android:id="@+id/nextRate"
+            android:layout_below="@id/realHeartRate"
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/barheartStraight"
+            android:background="@drawable/arrow_right" />
+
+        <com.walnutin.view.HeartRateStraightLineNew
+            android:id="@+id/heartStraight"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/realHeartRate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/nextRate"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/heartStraight">
+
+            <RelativeLayout
+                android:id="@+id/rlNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/centerImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/firstprize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/centerImg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/centerImg"
+                    android:layout_toRightOf="@id/centerImg"
+                    android:text="正常"
+                    android:textColor="@color/half_gray"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:id="@+id/NormalValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/txtNormal"
+                    android:layout_toRightOf="@id/txtNormal"
+                    android:background="@drawable/textwhiteroundstyle"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/half_gray"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/rlNormal"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@id/rlNormal">
+
+                <ImageView
+                    android:id="@+id/centerImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/twoprize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/centerImg2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/centerImg2"
+                    android:layout_toRightOf="@id/centerImg2"
+                    android:text="偏低"
+                    android:textColor="@color/half_gray"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:id="@+id/lowValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/txtLow"
+                    android:layout_toRightOf="@id/txtLow"
+                    android:background="@drawable/textwhiteroundstyle"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/half_gray"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/rlNormal"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/rlNormal">
+
+                <ImageView
+                    android:id="@+id/centerImg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/thirdprize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/centerImg3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/centerImg3"
+                    android:layout_toRightOf="@id/centerImg3"
+                    android:text="偏高"
+                    android:textColor="@color/half_gray"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:id="@+id/highValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/txtHigh"
+                    android:layout_toRightOf="@id/txtHigh"
+                    android:background="@drawable/textwhiteroundstyle"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/half_gray"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="48dp"
+        android:layout_below="@id/center"
+        android:layout_marginBottom="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/group_line_e5"></View>
+
+        <TextView
+            android:id="@+id/startMeasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rate_selector"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="开始测量"
+            android:textColor="@color/half_gray"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/activity_selected"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout><!--"-->

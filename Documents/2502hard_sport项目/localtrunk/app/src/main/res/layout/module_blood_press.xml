@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="血压"
+            android:textColor="@color/font_defaults" />
+
+        <TextView
+            android:id="@+id/goalstep"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="80-120"
+            android:textSize="@dimen/font_default_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/goalstep"
+            android:gravity="center_vertical"
+            android:text="健康血压/"
+            android:textSize="@dimen/font_default_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/top">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"></View>
+
+        <TextView
+            android:id="@+id/realSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="血压 75-110"
+            android:textColor="@color/font_defaults"
+            android:textSize="@dimen/font_default_size" />
+
+        <View
+            android:id="@+id/stepBar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/realSleep"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_color"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/stepBar">
+
+            <RelativeLayout
+                android:id="@+id/rlNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/centerImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/firstprize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/centerImg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/centerImg"
+                    android:layout_toRightOf="@id/centerImg"
+                    android:text="正常"
+                    android:textColor="@color/half_gray"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/txtNormal"
+                    android:layout_toRightOf="@id/txtNormal"
+                    android:background="@drawable/textwhiteroundstyle"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/half_gray"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/rlNormal"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@id/rlNormal">
+
+                <ImageView
+                    android:id="@+id/centerImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/twoprize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/centerImg2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/centerImg2"
+                    android:layout_toRightOf="@id/centerImg2"
+                    android:text="偏低"
+                    android:textColor="@color/half_gray"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/txtLow"
+                    android:layout_toRightOf="@id/txtLow"
+                    android:background="@drawable/textwhiteroundstyle"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/half_gray"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/rlNormal"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/rlNormal">
+
+                <ImageView
+                    android:id="@+id/centerImg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/thirdprize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/centerImg3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/centerImg3"
+                    android:layout_toRightOf="@id/centerImg3"
+                    android:text="偏高"
+                    android:textColor="@color/half_gray"
+                    android:textSize="@dimen/login_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toEndOf="@id/txtHigh"
+                    android:layout_toRightOf="@id/txtHigh"
+                    android:background="@drawable/textwhiteroundstyle"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/half_gray"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/group_line_e5"></View>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/activity_selected" />
+    </RelativeLayout>
+
+</RelativeLayout><!--"-->

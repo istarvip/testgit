@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="simpleLabel">
+        <attr name="label" format="string"/>
+        <attr name="labelValue" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="topTitle">
+        <attr name="back" format="string"/>
+        <attr name="lableText" format="string"/>
+        <attr name="right_oper_img" format="reference" />
+        <attr name="right_oper_txt" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="groupTopTitle">
+        <attr name="leftContent" format="string"/>
+        <attr name="centerContent" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="groupItemContent">
+        <attr name="leftItemContent" format="string"/>
+        <attr name="centerItemContent" format="string"/>
+        <attr name="rightItemContent" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="watchSettingItem">
+        <attr name="leftImg" format="reference"/>
+        <attr name="centerTitle" format="string"/>
+    </declare-styleable>
+</resources>

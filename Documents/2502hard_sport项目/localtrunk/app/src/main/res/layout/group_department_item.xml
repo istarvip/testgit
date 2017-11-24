@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+        >
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/line_color"
+            >
+
+    </View>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            >
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColorHint="@color/font_defaults"
+              android:id="@+id/txtPart"
+              android:text=""
+              android:gravity="center_vertical"
+              android:textSize="@dimen/font_default_size"
+              android:layout_marginLeft="@dimen/margin_left"
+              android:textColor="@color/lable_text_color"
+              android:layout_gravity="center"
+            />
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:textSize="@dimen/font_default_size"
+              android:id="@+id/edt_inputGroupCompanyDepart"
+              android:background="@null"
+              android:layout_gravity="center"
+              android:textColor="@color/font_defaults"
+              android:text=""
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

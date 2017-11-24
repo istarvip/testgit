@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rldscible"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/daily_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="今天"
+            android:textColor="@color/font_defaults"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/rldscible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/arrow_left"
+            android:background="@drawable/arrow_left" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/arrow_right"
+            android:background="@drawable/arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlring"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/rldscible"
+        android:layout_centerHorizontal="true">
+
+        <com.walnutin.view.ProgressCircle
+            android:id="@id/homepage_RingProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@id/homepage_currentsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="14000"
+            android:textColor="@color/font_defaults"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/homepage_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/homepage_currentsteps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="步数"
+            android:textColor="@color/font_defaults"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homepage_currentsteps"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/homepage_txtgloasteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本周最高"
+                android:textColor="@color/font_defaults"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/homepage_gloalsteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/homepage_txtgloasteps"
+                android:text="7000"
+                android:textColor="@color/font_defaults"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlcenter"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/rlring"
+        android:background="@color/homepage_ring">
+
+        <TextView
+            android:id="@id/homepage_describleGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="相当于一个地球"
+            android:textColor="@color/font_defaults"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

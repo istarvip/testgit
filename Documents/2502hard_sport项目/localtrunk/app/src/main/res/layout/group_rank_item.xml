@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/firstRank"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/font_defaults"
+        android:textSize="18sp" />
+
+
+    <com.walnutin.view.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/firstRank"
+        android:background="@drawable/homepage_walk"
+        android:scaleType="centerCrop"
+        app:border_color="@color/white"
+        app:border_width="0dp"
+
+        />
+
+    <TextView
+        android:id="@+id/group_rank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/avatar"
+        android:gravity="center"
+        android:text="王大锤"
+        android:textColor="@color/font_defaults" />
+
+
+    <TextView
+        android:id="@+id/group_rank_labeltstep"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:gravity="center"
+        android:text="步"
+        android:textColor="@color/lable_text_color" />
+
+    <TextView
+        android:id="@+id/group_rank_tstep"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/group_rank_labeltstep"
+        android:gravity="right|center_vertical"
+        android:text="144"
+        android:textColor="@color/red_background_notselected"
+        android:textSize="24sp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/group_line_e5" />
+    </RelativeLayout>
+</RelativeLayout>
+

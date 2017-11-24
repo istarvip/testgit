@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/week_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@color/white"
+        android:gravity="top|center_horizontal"
+        android:text="Week 7"
+        android:textColor="@color/half_gray"
+
+        />
+
+    <TextView
+        android:id="@+id/week_num"
+        android:layout_width="19sp"
+        android:layout_height="19sp"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="top|center_horizontal"
+        android:text="10"
+        android:textColor="@color/half_gray" />
+
+</LinearLayout>

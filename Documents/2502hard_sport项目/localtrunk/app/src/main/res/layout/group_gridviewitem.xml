@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <com.walnutin.view.CircleImageView
+        android:id="@+id/Im_portrait"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+       android:layout_centerInParent="true"
+        android:background="@drawable/head_image"
+        app:border_width="0dp"
+        app:border_color="@color/white"
+        />
+
+</RelativeLayout>
