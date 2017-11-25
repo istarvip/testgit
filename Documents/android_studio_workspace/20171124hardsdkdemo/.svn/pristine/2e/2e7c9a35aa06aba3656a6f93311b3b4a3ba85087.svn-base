@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.walnutin.hardsdkdemo.MainActivity">
+
+
+    <EditText
+        android:id="@+id/content_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:editable="false"
+        android:scrollbars="vertical" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/search_device_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="搜索" />
+
+
+            <Button
+                android:id="@+id/realtime_step_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="获取实时计步" />
+
+            <Button
+                android:id="@+id/realtime_heart_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="开始测量心率" />
+
+            <Button
+                android:id="@+id/start_sync_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="开始同步" />
+
+
+            <Button
+                android:id="@+id/query_step_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="查询某天历史计步数据" />
+
+
+            <Button
+                android:id="@+id/query_hour_step_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="查询某天每小时计步数据" />
+
+
+            <Button
+                android:id="@+id/query_heart_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="查询某天历史心率数据" />
+
+            <Button
+                android:id="@+id/query_sleep_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="查询某天历史睡眠数据" />
+
+
+            <Button
+                android:id="@+id/set_sedentary_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="设置久坐" />
+
+            <Button
+                android:id="@+id/find_band_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="查找手环" />
+
+
+            <Button
+                android:id="@+id/alarm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="设置闹钟" />
+
+
+            <Button
+                android:id="@+id/message_push_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="消息通知" />
+
+
+            <Button
+                android:id="@+id/call_push_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="来电通知" />
+
+            <Button
+                android:id="@+id/getAlarm2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="获取维亿魄新版闹钟" />
+
+            <Button
+                android:id="@+id/getNoticeFunction"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="获取支持消息功能" />
+            <Button
+                android:id="@+id/changeHV"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="横竖屏切换" />
+
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="固件升级" />
+
+
+            <Button
+                android:id="@+id/reset_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="恢复出厂设置" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
